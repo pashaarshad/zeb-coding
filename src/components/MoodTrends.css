@@ -1,0 +1,25 @@
+.mood-trends-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 24px;
+  max-width: 400px;
+  margin: 32px auto;
+}
+.mood-trends-chart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.mood-trend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mood-emoji {
+  font-size: 32px;
+}
+.mood-day {
+  font-size: 14px;
+  color: #888;
+}

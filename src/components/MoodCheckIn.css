@@ -1,0 +1,35 @@
+.mood-checkin-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 24px;
+  max-width: 400px;
+  margin: 32px auto;
+}
+.mood-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.mood-btn {
+  background: #f7f7fa;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 12px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+.mood-btn.selected {
+  background: #1976d2;
+  color: #fff;
+}
+.mood-selected {
+  font-size: 18px;
+  color: #1976d2;
+  margin-top: 8px;
+}

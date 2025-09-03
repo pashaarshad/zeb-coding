@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
+import React, { useState } from 'react';
 import './App.css';
+import Chat from './components/Chat';
+import MoodCheckIn from './components/MoodCheckIn';
+import Dashboard from './components/Dashboard';
 
 function App() {
+  const [page, setPage] = useState('chat');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="app-nav">
+        <button onClick={() => setPage('chat')}>AI Chat</button>
+        <button onClick={() => setPage('mood')}>Mood Check-In</button>
+        <button onClick={() => setPage('dashboard')}>Dashboard</button>
+      </nav>
+      <main className="app-main">
+        {page === 'chat' && <Chat />}
+        {page === 'mood' && <MoodCheckIn />}
+        {page === 'dashboard' && <Dashboard />}
+      </main>
     </div>
   );
 }
